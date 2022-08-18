@@ -612,7 +612,8 @@ getFromJSONArray({
 	if (json_array[NUM] == "undefined") {
 		return "";
 	} else {
-		return String(json_array[NUM]);
+		var str = json_array[NUM]
+		return str.text();
 	}  
 };
 
